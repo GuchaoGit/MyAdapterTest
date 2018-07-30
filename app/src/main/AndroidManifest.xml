@@ -20,6 +20,7 @@
         <activity android:name=".activity.TestArrayAdaper"/>
         <activity android:name=".activity.TestSimpleAdapter"/>
         <activity android:name=".activity.TestPageAdapter"/>
+        <activity android:name=".activity.TestCardAdapter"/>
     </application>
 
 </manifest>

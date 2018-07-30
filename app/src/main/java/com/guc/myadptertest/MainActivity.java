@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.guc.myadptertest.activity.TestArrayAdaper;
+import com.guc.myadptertest.activity.TestCardAdapter;
 import com.guc.myadptertest.activity.TestPageAdapter;
 import com.guc.myadptertest.activity.TestSimpleAdapter;
 
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.tv_array_adapter, R.id.tv_simple_adapter,R.id.tv_page_adapter})
+    @OnClick({R.id.tv_array_adapter, R.id.tv_simple_adapter,R.id.tv_page_adapter,R.id.tv_card_adapter})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.tv_array_adapter:
@@ -31,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.tv_page_adapter:
                 TestPageAdapter.jump(this);
+                break;
+            case R.id.tv_card_adapter:
+                TestCardAdapter.jump(this);
                 break;
         }
     }

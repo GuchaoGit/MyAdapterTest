@@ -29,5 +29,11 @@
             android:layout_height="wrap_content"
             android:minHeight="50dp"
             android:text="PageAdapter"/>
+        <TextView
+            android:id="@+id/tv_card_adapter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:text="CardAdapter"/>
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>
