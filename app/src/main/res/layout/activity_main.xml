@@ -9,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:padding="@dimen/dimen_10dp"
         tools:context=".MainActivity">
 
         <TextView
@@ -41,5 +42,17 @@
             android:layout_height="wrap_content"
             android:minHeight="50dp"
             android:text="SwipeCardView"/>
+        <TextView
+            android:id="@+id/tv_test_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:text="日历（Calendar）"/>
+        <TextView
+            android:id="@+id/tv_test_calendar_meizu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:text="魅族风格日历（Calendar）"/>
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>
