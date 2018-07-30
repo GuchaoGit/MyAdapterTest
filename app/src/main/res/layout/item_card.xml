@@ -6,6 +6,7 @@
     android:layout_height="wrap_content"
     android:background="@color/colorAccent"
     android:orientation="vertical"
+    android:layout_marginTop="@dimen/dimen_20dp"
     app:cardCornerRadius="@dimen/dimen_5dp"
     app:cardUseCompatPadding="true">
 

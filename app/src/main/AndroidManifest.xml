@@ -21,6 +21,7 @@
         <activity android:name=".activity.TestSimpleAdapter"/>
         <activity android:name=".activity.TestPageAdapter"/>
         <activity android:name=".activity.TestCardAdapter"/>
+        <activity android:name=".activity.TestSwipeCardview"/>
     </application>
 
 </manifest>

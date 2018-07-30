@@ -8,6 +8,7 @@ import com.guc.myadptertest.activity.TestArrayAdaper;
 import com.guc.myadptertest.activity.TestCardAdapter;
 import com.guc.myadptertest.activity.TestPageAdapter;
 import com.guc.myadptertest.activity.TestSimpleAdapter;
+import com.guc.myadptertest.activity.TestSwipeCardview;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -21,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.tv_array_adapter, R.id.tv_simple_adapter,R.id.tv_page_adapter,R.id.tv_card_adapter})
+    @OnClick({R.id.tv_array_adapter, R.id.tv_simple_adapter,R.id.tv_page_adapter,R.id.tv_card_adapter,R.id.tv_swipe_cardview})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.tv_array_adapter:
@@ -35,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.tv_card_adapter:
                 TestCardAdapter.jump(this);
+                break;
+            case R.id.tv_swipe_cardview:
+                TestSwipeCardview.jump(this);
                 break;
         }
     }
