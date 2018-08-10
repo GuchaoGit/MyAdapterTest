@@ -1,6 +1,7 @@
 package com.guc.myadptertest.adapter.viewpage;
 
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.view.PagerAdapter;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,5 +36,11 @@ public class AdapterViewPager1 extends PagerAdapter {
     public Object instantiateItem(ViewGroup container, int position) {
         container.addView(mImageViews.get(position));
         return mImageViews.get(position);
+    }
+
+    @Nullable
+    @Override
+    public CharSequence getPageTitle(int position) {
+        return String.valueOf(position);
     }
 }
