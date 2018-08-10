@@ -24,6 +24,7 @@
         <activity android:name=".activity.TestSwipeCardview"/>
         <activity android:name=".activity.TestCalendar"/>
         <activity android:name=".activity.TestCalendarMeizu"/>
+        <activity android:name=".activity.TestRecycleView"/>
     </application>
 
 </manifest>
