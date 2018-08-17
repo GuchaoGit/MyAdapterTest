@@ -1,1 +1,7 @@
 # MyAdapterTest适配器使用示例
+
+添加Pandora测试工具
+添加CardAdapter,实现可左右滑动的Card视图布局
+添加SwipeCardView,实现滑动切换的Card视图布局
+日历控件功能添加
+RecyclerView添加header和foot
