@@ -26,6 +26,13 @@
         <activity android:name=".activity.TestCalendarMeizu"/>
         <activity android:name=".activity.TestRecycleView"/>
         <activity android:name=".activity.TestGroupRecycleView"/>
+        <activity android:name=".activity.TestAidl" />
+
+        <service
+            android:name=".service.PersonService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":aidl" />
     </application>
 
 </manifest>

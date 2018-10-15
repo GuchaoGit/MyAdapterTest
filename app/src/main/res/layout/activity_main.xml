@@ -3,9 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <LinearLayout
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -66,5 +65,12 @@
             android:layout_height="wrap_content"
             android:minHeight="50dp"
             android:text="RecyclerView带分组功能"/>
+
+        <TextView
+            android:id="@+id/tv_test_aidl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:text="aidl测试" />
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>
