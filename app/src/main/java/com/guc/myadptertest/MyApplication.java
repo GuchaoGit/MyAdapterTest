@@ -12,6 +12,6 @@ public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        Pandora.init(this).enableShakeOpen();
+        Pandora.init(this).enableShakeOpen();//潘多拉测试工具
     }
 }
