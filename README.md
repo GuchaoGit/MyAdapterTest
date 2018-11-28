@@ -5,3 +5,4 @@
 添加SwipeCardView,实现滑动切换的Card视图布局
 日历控件功能添加
 RecyclerView添加header和foot
+AIDL使用示例
