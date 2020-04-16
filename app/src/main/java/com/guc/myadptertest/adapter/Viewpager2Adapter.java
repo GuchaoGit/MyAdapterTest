@@ -5,40 +5,38 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-
-public abstract class CommonRecycleAdapter<T> extends RecyclerView.Adapter<CommonViewHolder> {
-    private LayoutInflater layoutInflater;
+/**
+ * Created by guc on 2020/4/16.
+ * 描述：通用Viewpager2适配器
+ */
+public abstract class Viewpager2Adapter<T> extends RecyclerView.Adapter<ViewHolder> {
     protected List<T> dataList;
     protected int layoutId;
     protected Context mContext;
+    private LayoutInflater layoutInflater;
 
-    public CommonRecycleAdapter(Context context, List<T> dataList, int layoutId) {
+    public Viewpager2Adapter(Context context, List<T> dataList, int layoutId) {
         this.mContext = context;
         this.layoutInflater = LayoutInflater.from(context);
         this.dataList = dataList;
         this.layoutId = layoutId;
     }
 
+    @NonNull
     @Override
-    public int getItemViewType(int position) {
-        return super.getItemViewType(position);
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int i) {
+        View view = layoutInflater.inflate(layoutId, parent, false);
+        return new ViewHolder(mContext, view);
     }
 
     @Override
-    public CommonViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view;
-        view = layoutInflater.inflate(layoutId, parent, false);
-
-        return new CommonViewHolder(view, viewType);
-    }
-
-    @Override
-    public void onBindViewHolder(CommonViewHolder holder, int position) {
-            bindData(holder, dataList.get(position));
+    public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
+        bindData(viewHolder, dataList.get(i));
     }
 
     @Override
@@ -65,5 +63,5 @@ public abstract class CommonRecycleAdapter<T> extends RecyclerView.Adapter<Commo
         return dataList != null && dataList.size() > 0;
     }
 
-    public abstract void bindData(CommonViewHolder holder, T data);
+    public abstract void bindData(ViewHolder holder, T data);
 }

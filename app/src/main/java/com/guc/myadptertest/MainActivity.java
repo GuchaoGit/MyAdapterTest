@@ -1,8 +1,9 @@
 package com.guc.myadptertest;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.guc.myadptertest.activity.TestAidl;
 import com.guc.myadptertest.activity.TestArrayAdaper;
@@ -14,6 +15,7 @@ import com.guc.myadptertest.activity.TestPageAdapter;
 import com.guc.myadptertest.activity.TestRecycleView;
 import com.guc.myadptertest.activity.TestSimpleAdapter;
 import com.guc.myadptertest.activity.TestSwipeCardview;
+import com.guc.myadptertest.activity.Viewpager2Activity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.tv_array_adapter, R.id.tv_simple_adapter, R.id.tv_page_adapter, R.id.tv_card_adapter, R.id.tv_swipe_cardview, R.id.tv_test_calendar, R.id.tv_test_calendar_meizu, R.id.tv_test_recycler_view, R.id.tv_test_group_recycler_view, R.id.tv_test_aidl})
+    @OnClick({R.id.tv_array_adapter, R.id.tv_simple_adapter, R.id.tv_page_adapter, R.id.tv_card_adapter, R.id.tv_swipe_cardview, R.id.tv_test_calendar, R.id.tv_test_calendar_meizu, R.id.tv_test_recycler_view, R.id.tv_test_group_recycler_view, R.id.tv_test_aidl, R.id.tv_test_vp2})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.tv_array_adapter:
@@ -59,6 +61,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.tv_test_aidl:
                 TestAidl.jump(this);
+                break;
+            case R.id.tv_test_vp2:
+                Viewpager2Activity.jump(this);
                 break;
         }
     }

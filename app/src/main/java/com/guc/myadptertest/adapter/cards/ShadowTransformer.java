@@ -1,8 +1,9 @@
 package com.guc.myadptertest.adapter.cards;
 
-import android.support.v4.view.ViewPager;
-import android.support.v7.widget.CardView;
 import android.view.View;
+
+import androidx.cardview.widget.CardView;
+import androidx.viewpager.widget.ViewPager;
 
 
 public class ShadowTransformer implements ViewPager.OnPageChangeListener, ViewPager.PageTransformer {

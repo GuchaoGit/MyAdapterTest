@@ -1,12 +1,13 @@
 package com.guc.myadptertest.adapter.cards;
 
-import android.support.v4.view.PagerAdapter;
-import android.support.v7.widget.CardView;
 import android.text.Html;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.cardview.widget.CardView;
+import androidx.viewpager.widget.PagerAdapter;
 
 import com.guc.myadptertest.R;
 import com.guc.myadptertest.bean.BeanRemind;

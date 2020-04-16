@@ -3,13 +3,14 @@
     package="com.guc.myadptertest">
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:name=".MyApplication"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.Viewpager2Activity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,15 +18,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.TestArrayAdaper"/>
-        <activity android:name=".activity.TestSimpleAdapter"/>
-        <activity android:name=".activity.TestPageAdapter"/>
-        <activity android:name=".activity.TestCardAdapter"/>
-        <activity android:name=".activity.TestSwipeCardview"/>
-        <activity android:name=".activity.TestCalendar"/>
-        <activity android:name=".activity.TestCalendarMeizu"/>
-        <activity android:name=".activity.TestRecycleView"/>
-        <activity android:name=".activity.TestGroupRecycleView"/>
+        <activity android:name=".activity.TestArrayAdaper" />
+        <activity android:name=".activity.TestSimpleAdapter" />
+        <activity android:name=".activity.TestPageAdapter" />
+        <activity android:name=".activity.TestCardAdapter" />
+        <activity android:name=".activity.TestSwipeCardview" />
+        <activity android:name=".activity.TestCalendar" />
+        <activity android:name=".activity.TestCalendarMeizu" />
+        <activity android:name=".activity.TestRecycleView" />
+        <activity android:name=".activity.TestGroupRecycleView" />
         <activity android:name=".activity.TestAidl" />
 
         <service

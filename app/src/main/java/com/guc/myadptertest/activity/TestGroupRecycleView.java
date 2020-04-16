@@ -3,19 +3,17 @@ package com.guc.myadptertest.activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.view.View;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.donkingliang.groupedadapter.adapter.GroupedRecyclerViewAdapter;
 import com.donkingliang.groupedadapter.holder.BaseViewHolder;
 import com.guc.myadptertest.R;
-import com.guc.myadptertest.adapter.AdapterRcv;
 import com.guc.myadptertest.adapter.GroupAdapter;
-import com.guc.myadptertest.adapter.HeaderAndFooterWrapper;
 import com.guc.myadptertest.bean.BeanRemind;
 
 import java.util.ArrayList;
